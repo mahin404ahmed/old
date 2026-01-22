@@ -192,18 +192,18 @@ def window1():
 # Set window title
 sys.stdout.write('\x1b]2;𓆩【MAHIN】𓆪 \x07')
  
-# MAHIN Clover Logo - White & Green - Version 2.5
 def __banner__():
+    import os, sys
     if 'win' in sys.platform:
         os.system('cls')
     else:
         os.system('clear')
 
-    # কালার সেটআপ
-    W = '\033[1;37m' # সাদা
-    G = '\033[1;32m' # সবুজ
-    R = '\033[1;31m' # লাল
-    S = '\033[0m'    # রিসেট
+    # কালার কোড
+    W = '\033[1;37m' # White
+    G = '\033[1;32m' # Green
+    R = '\033[1;31m' # Red
+    S = '\033[0m'    # Reset
 
     # ব্যানার ডিজাইন
     print(f"{W}▗▖  ▗▖ ▗▄▖ ▗▖ ▗▖▗▄▄▄▖▗▖  ▗▖")
@@ -215,16 +215,16 @@ def __banner__():
     print(f"{R}♻️ DEVELOPED BY MAHIN ♻️{S}")
     print(f"{G}_________________________________________{S}")
 
-    print(f"{G}[{W}={G}]    {W}OWNER {G}:{W} MAHIN AHMED👑")
-    print(f"{G}[{W}={G}]    {W}GITHUB {G}:{W} mahin404ahmed✅")
-    print(f"{G}[{W}={G}]     {W}WHATSAPP {G}:{W} 01340038000✌️")
-
+    # তথ্যগুলো একদম সমান লাইনে সাজানো হয়েছে
+    print(f"{G}[{W}={G}] {W}OWNER    {G}: {W}MAHIN AHMED👑")
+    print(f"{G}[{W}={G}] {W}GITHUB   {G}: {W}mahin404ahmed✅")
+    print(f"{G}[{W}={G}] {W}WHATSAPP {G}: {W}01340038000✌️")
+    
     print(f"{W}_________________________________________")
 
-    print(f"{G}[{W}={G}]     {W}TOOL {G}:{W} OLD ID CLONING☠️")
-    print(f"{G}[{W}={G}]     {W}STATUS {G}:{W} FREE💀")
-    print(f"{G}[{W}={G}]     {W}VERSION {G}:{W} 0.1🔰")
-    print(f"{G}_________________________________________")
+    print(f"{G}[{W}={G}] {W}TOOL     {G}: {W}OLD ID CLONING☠️")
+    print(f"{G}[{W}={G}] {W}STATUS   {G}: {W}FREE💀")
+    print(f"{G}[{W}={G}] {W}VERSION  {G}: {W}0.1🔰")
  
  
 def creationyear(uid):
@@ -311,7 +311,7 @@ def old_clone():
     """
     Menu for selecting old account cloning type.
     """
-    ____banner____()
+    __banner__()
     print('       \x1b[38;5;196m(\x1b[1;37mA\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;49mALL SERIES')
     linex()
     print('       \x1b[38;5;196m(\x1b[1;37mB\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;49m100003/4 SERIES')
@@ -335,11 +335,11 @@ def old_One():
     Cloning method for accounts from 2010-2014.
     """
     user = []
-    ____banner____()
+    __banner__()
     print(f"       \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;49mOld Code {Y}:{G} 2010-2014")
     ask = input(f"       \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;41mSELECT {Y}:{G} ")
     linex()
-    ____banner____()
+    __banner__()
     print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mEXAMPLE {Y}:{G} 20000 / 30000 / 99999")
     limit = input(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mSELECT {Y}:{G} ")
     linex()
@@ -352,7 +352,7 @@ def old_One():
     linex()
     meth = input(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mCHOICE {W}(A/B): {Y}").strip().upper()
     with tred(max_workers=30) as pool:
-        ____banner____()
+        __banner__()
         print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mTOTAL ID FROM CRACK {Y}: {G} {limit}{W}")
         print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mUSE AIRPLANE MOD FOR GOOD RESULT{G}")
         linex()
@@ -372,11 +372,11 @@ def old_Tow():
     Cloning method for accounts with specific prefixes.
     """
     user = []
-    ____banner____()
+    __banner__()
     print(f"       \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mOLD CODE {Y}:{G} 2010-2014")
     ask = input(f"       \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mSELECT {Y}:{G} ")
     linex()
-    ____banner____()
+    __banner__()
     print(f"       \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mEXAMPLE {Y}:{G} 20000 / 30000 / 99999")
     limit = input(f"       \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mSELECT {Y}:{G} ")
     linex()
@@ -391,7 +391,7 @@ def old_Tow():
     linex()
     meth = input(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mCHOICE {W}(A/B): {Y}").strip().upper()
     with tred(max_workers=30) as pool:
-        ____banner____()
+        __banner__()
         print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mTOTAL ID FROM CRACK {Y}: {G} {limit}{W}")
         print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mUSE AIRPLANE MOD FOR GOOD RESULT{G}")
         linex()
@@ -410,11 +410,11 @@ def old_Tree():
     Cloning method for accounts from 2009-2010.
     """
     user = []
-    ____banner____()
+    __banner__()
     print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mOLD CODE {Y}:{G} 2009-2010")
     ask = input(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mSELECT {Y}:{G} ")
     linex()
-    ____banner____()
+    __banner__()
     print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mEXAMPLE {Y}:{G} 20000 / 30000 / 99999")
     limit = input(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mTOTAL ID COUNT {Y}:{G} ")
     linex()
@@ -428,7 +428,7 @@ def old_Tree():
     linex()
     meth = input(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mCHOICE {W}(A/B): {Y}").strip().upper()
     with tred(max_workers=30) as pool:
-        ____banner____()
+        __banner__()
         print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mTOTAL ID FROM CRACK {Y}: {G}{limit}{W}")
         print(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mUSE AIRPLANE MOD FOR GOOD RESULT{G}")
         linex()
